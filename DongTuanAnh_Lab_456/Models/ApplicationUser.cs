@@ -7,7 +7,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DongTuanAnh_Lab_456.Models
 {
-    
     public class ApplicationUser : IdentityUser
     {
       
