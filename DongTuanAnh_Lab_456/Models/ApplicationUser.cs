@@ -10,7 +10,7 @@ namespace DongTuanAnh_Lab_456.Models
     
     public class ApplicationUser : IdentityUser
     {
-        [Required]
+      
         [StringLength(255)]
         public string Name { get; set; }
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
