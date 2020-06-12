@@ -32,6 +32,7 @@ namespace DongTuanAnh_Lab_456.Controllers
         // POST: Courses
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if(!ModelState.IsValid)
