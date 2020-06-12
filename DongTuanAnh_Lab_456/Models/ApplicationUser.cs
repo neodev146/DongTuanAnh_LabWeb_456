@@ -21,6 +21,4 @@ namespace DongTuanAnh_Lab_456.Models
             return userIdentity;
         }
     }
-
-
 }
