@@ -9,7 +9,7 @@ namespace DongTuanAnh_Lab_456.Migrations
         {
             Sql("Insert into Categories (ID, NAME) Values (1, 'Development')");
             Sql("Insert into Categories (ID, NAME) Values (2, 'Business')");
-            Sql("Insert into Categories (ID, NAME) Values (3, 'Maarketing')");
+            Sql("Insert into Categories (ID, NAME) Values (3, 'Marketing')");
         }
         
         public override void Down()
