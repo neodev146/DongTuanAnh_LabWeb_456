@@ -29,6 +29,7 @@ namespace DongTuanAnh_Lab_456.Models
                 .WithMany()
                 .WillCascadeOnDelete(false);
             base.OnModelCreating(modelBuilder);
+
         }
     }
 }
