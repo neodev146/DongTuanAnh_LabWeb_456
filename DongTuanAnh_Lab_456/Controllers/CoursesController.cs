@@ -114,11 +114,13 @@ namespace DongTuanAnh_Lab_456.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Update(CourseViewModel viewModel)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 viewModel.Categories = _dbContext.Categories.ToList();
                 return View("Create", viewModel);
             }
+
+
             var userId = User.Identity.GetUserId();
             var course = _dbContext.Courses.Single(c => c.Id == viewModel.Id && c.LecturerId == userId);
 
@@ -127,6 +129,7 @@ namespace DongTuanAnh_Lab_456.Controllers
             course.CategoryId = viewModel.Category;
 
             _dbContext.SaveChanges();
+
 
             return RedirectToAction("Index", "Home");
         }

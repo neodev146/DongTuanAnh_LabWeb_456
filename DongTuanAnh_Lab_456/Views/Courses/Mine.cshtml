@@ -38,18 +38,21 @@
                 bootbox.confirm("Are you sure to cancel?",
                     function () {
                         $.ajax({
-                                url: "/api/courses" + link.attr("data-course-id"), method: "DELETE"
-                             })
+                            url: "/api/courses/" + link.attr("data-course-id"),
+                            method: "DELETE"
+                        })
                             .done(function () {
                                 link.parents("li").fadeOut(function () {
                                     $(this).remove();
                                 });
                             })
                             .fail(function () {
-                                alert("Something failed!");
+                                alert("Something failed!")
                             });
                     });
             });
         });
+
+
     </script>
 }
