@@ -20,6 +20,7 @@ namespace DongTuanAnh_Lab_456.Controllers
 
         // GET: Courses
         [Authorize]
+
         public ActionResult Create()
         {
             var viewModel = new CourseViewModel
