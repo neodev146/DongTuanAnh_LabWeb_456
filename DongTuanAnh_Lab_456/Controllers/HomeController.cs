@@ -27,7 +27,7 @@ namespace DongTuanAnh_Lab_456.Controllers
 
             var viewModel = new CoursesViewModel
             {
-                upcomingCourses = upcomingCourses,
+                UpcomingCourses = upcomingCourses,
                 ShowAction = User.Identity.IsAuthenticated
             };
             return View(viewModel);
